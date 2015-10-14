@@ -1,0 +1,15 @@
+
+language: ruby
+sudo: false
+
+script:
+  - echo build build build
+  - echo test test test
+  - echo $SOME_VAR
+  - echo $SOME_OTHER_VAR
+  - echo $YET_ANOTHER_VAR
+
+env:
+  global:
+  - secure: mbyE3L0SSi+T/RHAP4QexuDmHAztYDAcxjGfL4AKz3yGh17CIZnBXmxD39hMnqLLMSNOzct6LhmEpw1p4/3gX+21MHeP/5gmjeX7a/F2DqYtZ5/yJTtLo/AOJGR0m60Ejgb+pnN+k73dEbsDCDg4Q5w5VPXQUNC6IKJVqLn4Jwo=
+  - secure: FlVbu7mvcZJHdMZABDJ5KqR0YZ1OJHXJvY+SijrtKsR2U3+iXfTDWu/utlyE8SN0K5poTmmKHK12wBPpg9ygJvulhpb6B/atn+LaU6t0jyCQ+0ajiS6OSeXhJIyHLg5bRZt73sOxHQaOC2Tb8XruMzhuLfBJwh/dZ0l4slLrIAc=
