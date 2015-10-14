@@ -8,6 +8,7 @@ script:
   - echo $SOME_VAR
   - echo $SOME_OTHER_VAR
   - echo $YET_ANOTHER_VAR
+  - env|sort
 
 env:
   global:
