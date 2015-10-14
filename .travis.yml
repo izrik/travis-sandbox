@@ -9,7 +9,7 @@ script:
   - echo $SOME_OTHER_VAR
   - echo $YET_ANOTHER_VAR
   - env|sort
-  - export VERSION=`echo $TRAVIS_TAG | perl -npe '/^v(\d+\.\d+(?:\.\d+(?:\.\d+)?)?)$/ or die "Bad version format";s/^v//'
+  - export VERSION=`echo $TRAVIS_TAG | perl -npe '/^v(\d+\.\d+(?:\.\d+(?:\.\d+)?)?)$/ or die "Bad version format";s/^v//'`
   - echo $VERSION
   - echo nuget pack project.nuspec -Properties version=$VERSION
 
