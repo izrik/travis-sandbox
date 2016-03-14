@@ -2,6 +2,11 @@
 language: csharp
 sudo: false
 
+addons:
+  apt:
+    packages:
+    - gendarme
+
 script:
   - echo build build build
   - echo test test test
