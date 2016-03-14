@@ -4,8 +4,11 @@ sudo: false
 
 addons:
   apt:
+    sources:
+    - mono
     packages:
     - mono-tools-devel
+    - mono-tools
 
 script:
   - echo build build build
