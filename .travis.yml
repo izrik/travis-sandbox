@@ -12,6 +12,7 @@ script:
   - export VERSION=`echo $TRAVIS_TAG | perl -npe '/^v(\d+\.\d+(?:\.\d+(?:\.\d+)?)?)$/ or die "Bad version format";s/^v//'`
   - echo $VERSION
   - echo nuget pack project.nuspec -Properties version=$VERSION
+  - gendarme
 
 env:
   global:
