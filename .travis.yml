@@ -2,13 +2,7 @@
 language: csharp
 sudo: false
 
-addons:
-  apt:
-    sources:
-    - mono
-    packages:
-    - mono-tools-devel
-    - mono-tools
+
 
 script:
   - echo build build build
@@ -21,6 +15,8 @@ script:
   - echo $VERSION
   - echo nuget pack project.nuspec -Properties version=$VERSION
   - gendarme
+  - nuget install ./packages.config -o packages
+  - mono packages/Mono.Gendarme.2.11.0.20121120/tools/gendarme.exe
 
 env:
   global:
