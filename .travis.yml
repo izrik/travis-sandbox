@@ -5,7 +5,7 @@ sudo: false
 addons:
   apt:
     packages:
-    - gendarme
+    - mono-tools-devel
 
 script:
   - echo build build build
